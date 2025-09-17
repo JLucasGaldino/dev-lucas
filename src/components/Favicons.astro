@@ -1,10 +1,14 @@
 ---
-import favIcon from '~/assets/favicons/favicon.ico';
-import favIconSvg from '~/assets/favicons/favicon.svg';
-import appleTouchIcon from '~/assets/favicons/apple-touch-icon.png';
+import logoPng from '~/assets/favicons/Group.png'
 ---
 
-<link rel="shortcut icon" href={favIcon} />
-<link rel="icon" type="image/svg+xml" href={favIconSvg.src} />
-<link rel="mask-icon" href={favIconSvg.src} color="#8D46E7" />
-<link rel="apple-touch-icon" sizes="180x180" href={appleTouchIcon.src} />
+<!-- Standard PNG favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href={logoPng.src} />
+<link rel="icon" type="image/png" sizes="48x48" href={logoPng.src} />
+<link rel="icon" type="image/png" sizes="192x192" href={logoPng.src} />
+
+<!-- Apple devices (iPhone/iPad) -->
+<link rel="apple-touch-icon" sizes="180x180" href={logoPng.src} />
+
+<!-- Fallback for old browsers -->
+<link rel="shortcut icon" href={logoPng.src} />
