@@ -26,7 +26,7 @@ export const footerData = {
       title: 'Contacto',
       links: [
         { text: 'Email', href: 'mailto:lucas@lucasgaldino.com' },
-        { text: 'Telegram', href: 'tel:+34123456789' },
+        { text: 'Telegram', href: 'https://t.me/lucasgaldinoweb' },
         //{ text: 'WhatsApp', href: 'https://wa.me/34123456789' }, // later
       ],
     },
@@ -40,6 +40,14 @@ export const footerData = {
     // { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
   ],
   footNote: `
-    © ${new Date().getFullYear()} Lucas Galdino. Todos los derechos reservados.
+    © ${new Date().getFullYear()} Lucas Galdino. Todos los derechos reservados. Construido con
+    <a
+      href="https://github.com/arthelokyo/astrowind"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline dark:text-muted"
+    >
+      AstroWind
+    </a>.
   `,
 };
