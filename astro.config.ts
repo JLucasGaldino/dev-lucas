@@ -22,8 +22,8 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
-  site: 'https://jlucasgaldino.github.io',
-  base: '/dev-lucas',
+  site: 'https://lucasgaldino.com',
+  base: '/',
   output: 'static',
 
   integrations: [
