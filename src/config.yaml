@@ -11,14 +11,14 @@ metadata:
   title:
     default: Lucas Galdino
     template: '%s — Lucas Galdino'
-  description: "\U0001F680 Lucas Galdino ofrece diseño web profesional, hosting y soporte en España. Páginas rápidas, modernas y seguras para negocios y proyectos personales."
+  description: "Lucas Galdino ofrece diseño web profesional, hosting y soporte en España. Páginas rápidas, modernas y seguras para negocios y proyectos personales."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Lucas Galdino
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/true.png'
         width: 1200
         height: 628
     type: website
