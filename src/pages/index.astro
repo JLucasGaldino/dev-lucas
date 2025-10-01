@@ -130,59 +130,62 @@ const metadata = {
   />
 
   <!-- Pricing Widget ******************* -->
-  <Pricing
-    id="pricing"
-    title="Planes y precios"
-    subtitle="Todo lo que necesitas para tu presencia online"
-    prices={[
-        {
-        title: 'Básico',
-        subtitle: 'Para empezar con lo esencial',
-        price: '15',
-        period: 'al mes (+150€ instalación única)',
-        items: [
-        { description: '1 página estática con tu información básica' },
-        { description: 'Optimización móvil' },
-        { description: 'Dominio a tu nombre' },
-        { description: 'Hosting incluido' },
-        ],
-        callToAction: { text: 'Elegir plan', href: '#contact' },
-        },
-        {
-        title: 'Profesional',
-        subtitle: 'La opción más popular',
-        price: '25',
-        period: 'al mes (+300€ instalación única)',
-        hasRibbon: true,
-        ribbonTitle: 'Más vendido',
-        items: [
-        { description: 'Hasta 5 páginas (inicio, servicios, contacto, etc.)' },
-        { description: 'Sitio web multilingüe (ES/EN/FR/PT)' },
-        { description: 'Optimización SEO básica' },
-        { description: 'Hosting + soporte incluido' },
-        ],
-        callToAction: { text: 'Elegir plan', href: '#contact' },
-        },
-        {
-        title: 'Premium',
-        subtitle: 'Para negocios que quieren crecer más',
-        price: '45',
-        period: 'al mes (+500€ instalación única)',
-        items: [
-        { description: 'Gestor de contenido (edita tu web fácilmente)' },
-        { description: 'Mantenimiento y copias de seguridad' },
-        { description: 'Actualizaciones bajo demanda' },
-        { description: 'SEO avanzado y analítica básica' },
-        ],
-        callToAction: { text: 'Elegir plan', href: '#contact' },
-        },
-        ]}
-  >
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Pricing>
-
+<Pricing
+  id="pricing"
+  title="Planes y precios"
+  subtitle="Sitios web profesionales que atraen más clientes"
+  prices={[
+      {
+      title: 'Básico',
+      subtitle: 'Presencia online profesional',
+      price: '40',
+      period: 'al mes (500€ instalación única)',
+      items: [
+      { description: '1 página optimizada con toda tu información' },
+      { description: 'Diseño adaptado a móviles y tablets' },
+      { description: 'Dominio propio (.com o .es)' },
+      { description: 'Hosting rápido y seguro incluido' },
+      { description: 'Carga en menos de 2 segundos' },
+      ],
+      callToAction: { text: 'Elegir plan', href: '#contact' },
+      },
+      {
+      title: 'Profesional',
+      subtitle: 'Para negocios que reciben turistas',
+      price: '70',
+      period: 'al mes (1.000€ instalación única)',
+      hasRibbon: true,
+      ribbonTitle: 'Más vendido',
+      items: [
+      { description: 'Hasta 5 páginas (inicio, servicios, galería, contacto, etc.)' },
+      { description: 'Sitio en 2 idiomas (español + inglés, francés o portugués)' },
+      { description: 'Optimización para Google y Google Maps' },
+      { description: 'Formulario de contacto y WhatsApp integrado' },
+      { description: 'Hosting + soporte técnico incluido' },
+      ],
+      callToAction: { text: 'Elegir plan', href: '#contact' },
+      },
+      {
+      title: 'Premium',
+      subtitle: 'Control total de tu web',
+      price: '120',
+      period: 'al mes (1.800€ instalación única)',
+      items: [
+      { description: 'Hasta 4 idiomas (ES/EN/FR/PT)' },
+      { description: 'Panel de control - actualiza menús, fotos y textos tú mismo' },
+      { description: 'Mantenimiento y copias de seguridad automáticas' },
+      { description: 'Cambios y actualizaciones ilimitadas' },
+      { description: 'SEO avanzado + informes mensuales de visitas' },
+      { description: 'Soporte prioritario en menos de 24h' },
+      ],
+      callToAction: { text: 'Elegir plan', href: '#contact' },
+      },
+      ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Pricing>
 
   <!-- Steps2 Widget ****************** -->
 <Steps2
