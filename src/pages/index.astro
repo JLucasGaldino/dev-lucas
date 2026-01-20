@@ -1,6 +1,5 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-
 import Header from '~/components/widgets/Header.astro';
 import Hero2 from '~/components/widgets/Hero2.astro';
 import Features from '~/components/widgets/Features.astro';
@@ -11,17 +10,14 @@ import Pricing from '~/components/widgets/Pricing.astro';
 import Contact from '~/components/widgets/Contact.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogHighlightedPosts from '~/components/widgets/BlogHighlightedPosts.astro';
-
 import { headerData } from '~/navigation';
 import FAQs from '~/components/widgets/FAQs.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import type { ACTION_ERROR_CODES } from 'astro:actions';
-
 const metadata = {
   title: 'Home',
 };
 ---
-
 <Layout metadata={metadata}>
   <Fragment slot="header">
     <Header
@@ -31,42 +27,43 @@ const metadata = {
       isSticky
     />
   </Fragment>
-
   <!-- Hero2 Widget ******************* -->
-
   <Hero2
-    tagline="web para negocios locales"
+    tagline="Presencia digital para profesionales de la salud en Alicante"
     actions={[
-      { variant: 'primary', text: 'Contáctame', href: '#contact' },
-      { text: 'Ver más', href: '#features' },
+      { variant: 'primary', text: 'Auditoría gratuita', href: '#contact' },
+      { text: 'Ver servicios', href: '#features' },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1705948354520-08d2557f55b2?ixlib=rb-4.1.0&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Cliente y vendedor',
+      src: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.1.0&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Clínica moderna',
     }}
   >
     <Fragment slot="title">
-      Más <span class="text-accent dark:text-white">clientes</span> <br /> con un sitio web <span class="text-accent dark:text-white">en varios idiomas<br
-      />
+      Más <span class="text-accent dark:text-white">pacientes</span> <br /> con presencia digital <span class="text-accent dark:text-white">profesional<br />
     </Fragment>
-
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Sitios <span class="font-semibold">rápidos, seguros y fáciles</span> de usar. Conecta con turistas y clientes en <span class="font-semibold">español, inglés, francés o portugués.</span>
+        <span class="font-semibold">Web + redes sociales</span> para clínicas, fisioterapeutas, psicólogos y profesionales sanitarios. <span class="font-semibold">Diseñado por un estudiante de enfermería que entiende tu sector.</span>
       </span>
     </Fragment>
   </Hero2>
-
   <!-- Demos Widget *************** -->
   <Features2
-    title="Demos"
-    subtitle="Ejemplos de sitios web para tipos de empresa diferentes"
+    title="Ejemplos"
+    subtitle="Sitios web diseñados específicamente para profesionales de la salud"
     items={[
     {
-    title: 'Restaurante',
-    description: 'Sitio web para un restaurante de lujo',
-    icon: 'material-symbols:food-bank-outline-rounded',
-    href: 'https://luminous-dusk-ff69e2.netlify.app/es/'
+    title: 'Clínica de Fisioterapia',
+    description: 'Web con reservas online y gestión de citas',
+    icon: 'tabler:heart-handshake',
+    href: '#contact'
+    },
+    {
+    title: 'Consulta de Psicología',
+    description: 'Presencia profesional con información de servicios',
+    icon: 'tabler:brain',
+    href: '#contact'
     }
     ]}
   >
@@ -74,143 +71,177 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
-
   <!-- Features Widget *************** -->
-
   <Features
     id="features"
     title="Servicios"
-    subtitle="Todo lo que necesitas para atraer más clientes y hacer crecer tu negocio."
+    subtitle="Todo lo que tu clínica necesita para atraer y gestionar pacientes online."
     columns={2}
     items={[
         {
-        title: 'Sitios web multilingües',
-        description: 'Haz que turistas y clientes locales entiendan tu negocio en su idioma: español, inglés, francés o portugués.',
-        icon: 'tabler:language',
+        title: 'Web profesional con reservas online',
+        description: 'Sitio web conectado a cal.com para que pacientes reserven citas 24/7. Fácil de gestionar.',
+        icon: 'tabler:calendar-check',
         },
         {
-        title: 'Aparece en Google y Maps',
-        description: 'Optimización básica en buscadores y ubicación en Google Maps para que te encuentren fácilmente.',
-        icon: 'tabler:map-pin',
+        title: 'Gestión de redes sociales',
+        description: 'Instagram y redes sociales gestionadas con inteligencia artificial. 8-12 publicaciones mensuales que educan y atraen pacientes.',
+        icon: 'tabler:brand-instagram',
+        },
+        {
+        title: 'Aparece en búsquedas locales',
+        description: 'Optimización para Google y Google Maps. Cuando busquen "fisioterapeuta Alicante", te encontrarán.',
+        icon: 'tabler:map-search',
         },
         {
         title: 'Diseño adaptado a móviles',
-        description: 'El 90% de los turistas buscan en el móvil. Tu sitio se ve perfecto en cualquier dispositivo.',
+        description: 'Tus pacientes buscan desde el móvil. Tu web se ve perfecta en cualquier dispositivo.',
         icon: 'tabler:device-mobile',
         },
         {
-        title: 'Actualiza tu contenido fácilmente',
-        description: 'Cambia menús, fotos o horarios sin complicaciones, cuando lo necesites.',
-        icon: 'tabler:edit',
+        title: 'Contenido sanitario de calidad',
+        description: 'Como estudiante de enfermería, entiendo el lenguaje médico y creo contenido profesional y cercano.',
+        icon: 'tabler:stethoscope',
         },
         {
-        title: 'Prueba sin riesgo',
-        description: 'Reserva tu proyecto con un pago inicial reducido. Ves el diseño primero y solo completas el pago si quedas satisfecho.',
-        icon: 'tabler:shield-check',
+        title: 'Actualización sencilla',
+        description: 'Cambia horarios, servicios o información sin complicaciones técnicas.',
+        icon: 'tabler:edit',
         },
     ]}
   >
   </Features>
-
-
   <!-- Steps Widget ****************** -->
   <Steps
     id="process"
     tagline="Cómo funciona"
-    title="Un proceso sencillo para que tengas tu web lista rápido."
+    title="Un proceso simple para tener tu presencia digital lista en días."
     isReversed={true}
     items={[
         {
-        title: "Contacto",
-        description: "Hablamos de tu negocio y tus objetivos para la web.",
+        title: "Auditoría gratuita",
+        description: "Analizo tu web y redes sociales actuales. Te muestro qué mejorar para conseguir más pacientes.",
         icon: 'tabler:number-1',
         },
         {
-        title: "Diseño inicial",
-        description: "Te muestro un diseño preliminar. Ajustamos lo necesario.",
+        title: "Propuesta personalizada",
+        description: "Te presento un plan específico para tu clínica con ejemplos visuales.",
         icon: 'tabler:number-2',
         },
         {
-        title: "Desarrollo",
-        description: "Construyo tu web rápida, segura y multilingüe.",
+        title: "Desarrollo rápido",
+        description: "Creo tu web y configuro las redes sociales. Todo listo en 1-2 semanas.",
         icon: 'tabler:number-3',
         },
         {
-        title: "Entrega y soporte",
-        description: "Publicamos tu web y te acompaño con mantenimiento y actualizaciones.",
+        title: "Gestión continua",
+        description: "Mantengo tu web actualizada y publico contenido regularmente en redes sociales.",
         icon: 'tabler:number-4',
         },
         ]}
     image={{
-        src: 'https://images.unsplash.com/photo-1555791903-72b91c16e751?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Ordenador con pagina web',
+        src: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop',
+        alt: 'Profesional sanitario trabajando',
         }}
   >
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Steps>
-
   <!-- Pricing Widget ******************* -->
 <Pricing
   id="pricing"
   title="Planes y precios"
-  subtitle="Sitios web profesionales que atraen más clientes"
+  subtitle="Inversión transparente para hacer crecer tu clínica"
   prices={[
       {
-      title: 'Básico',
-      subtitle: 'Presencia online profesional',
-      price: '40',
-      period: 'al mes (500€ instalación única)',
+      title: 'Web Profesional',
+      subtitle: 'Tu clínica online',
+      price: '397',
+      period: 'instalación única + 197€/año mantenimiento',
       items: [
-      { description: '1 página optimizada con toda tu información' },
-      { description: 'Diseño adaptado a móviles y tablets' },
-      { description: 'Dominio propio (.com o .es)' },
+      { description: 'Sitio web profesional responsive' },
+      { description: 'Sistema de reservas online (cal.com)' },
+      { description: 'Información de servicios y especialidades' },
+      { description: 'Formulario de contacto y WhatsApp' },
+      { description: 'Optimización básica SEO y Google Maps' },
       { description: 'Hosting rápido y seguro incluido' },
-      { description: 'Carga en menos de 2 segundos' },
       ],
-      callToAction: { text: 'Elegir plan', href: '#contact' },
+      callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
       },
       {
-      title: 'Profesional',
-      subtitle: 'Para negocios que reciben turistas',
-      price: '70',
-      period: 'al mes (1.000€ instalación única)',
+      title: 'Web + Redes Sociales',
+      subtitle: 'Presencia digital completa',
+      price: '397',
+      period: 'web + 50€/mes redes sociales',
       hasRibbon: true,
-      ribbonTitle: 'Más vendido',
+      ribbonTitle: 'Recomendado',
       items: [
-      { description: 'Hasta 5 páginas (inicio, servicios, galería, contacto, etc.)' },
-      { description: 'Sitio en 2 idiomas (español + inglés, francés o portugués)' },
-      { description: 'Optimización para Google y Google Maps' },
-      { description: 'Formulario de contacto y WhatsApp integrado' },
-      { description: 'Hosting + soporte técnico incluido' },
+      { description: 'Todo lo del plan Web Profesional' },
+      { description: '8-12 publicaciones mensuales en Instagram' },
+      { description: 'Contenido creado con IA (supervisado)' },
+      { description: 'Diseño de posts profesional' },
+      { description: 'Hashtags y textos optimizados' },
+      { description: 'Informe mensual de resultados' },
       ],
-      callToAction: { text: 'Elegir plan', href: '#contact' },
+      callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
       },
       {
-      title: 'Premium',
-      subtitle: 'Control total de tu web',
-      price: '120',
-      period: 'al mes (1.800€ instalación única)',
+      title: 'Pack Completo',
+      subtitle: 'Máxima visibilidad',
+      price: '447',
+      period: 'instalación + 247€/año + 50€/mes',
       items: [
-      { description: 'Hasta 4 idiomas (ES/EN/FR/PT)' },
-      { description: 'Panel de control - actualiza menús, fotos y textos tú mismo' },
-      { description: 'Mantenimiento y copias de seguridad automáticas' },
-      { description: 'Cambios y actualizaciones ilimitadas' },
-      { description: 'SEO avanzado + informes mensuales de visitas' },
-      { description: 'Soporte prioritario en menos de 24h' },
+      { description: 'Web profesional con reservas online' },
+      { description: 'Gestión completa de Instagram' },
+      { description: '12-16 publicaciones mensuales' },
+      { description: 'Stories semanales' },
+      { description: 'Respuesta a comentarios y mensajes' },
+      { description: 'Actualizaciones web ilimitadas' },
+      { description: 'Soporte prioritario' },
       ],
-      callToAction: { text: 'Elegir plan', href: '#contact' },
+      callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
       },
       ]}
 >
 </Pricing>
 
+<!-- Why Me Section -->
+<Content
+  title="¿Por qué trabajo con profesionales de la salud?"
+  subtitle="La combinación perfecta: desarrollo web + conocimiento sanitario"
+  items={[
+    {
+      title: 'Entiendo tu sector',
+      description: 'Como estudiante de enfermería, conozco el lenguaje médico, la importancia de la confidencialidad y cómo comunicar con pacientes.',
+      icon: 'tabler:school',
+    },
+    {
+      title: 'Desarrollo rápido y profesional',
+      description: 'Soy desarrollador web con enfoque en velocidad y calidad. Tu web estará lista en días, no meses.',
+      icon: 'tabler:code',
+    },
+    {
+      title: 'Local en Alicante',
+      description: 'Puedo visitarte en persona, entender tu clínica y hacer ajustes rápidos cuando lo necesites.',
+      icon: 'tabler:map-pin',
+    },
+  ]}
+  image={{
+    src: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=2070&auto=format&fit=crop',
+    alt: 'Profesional trabajando',
+  }}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+
   <!-- Steps2 Widget ****************** -->
 <Steps2
   id="contact"
-  title="Contáctame"
-  subtitle="¿Tienes preguntas? Estoy aquí para ayudarte."
+  title="Solicita tu auditoría gratuita"
+  subtitle="Te muestro exactamente cómo mejorar tu presencia digital para conseguir más pacientes."
   callToAction={{
     text: 'Envíame un correo',
     href: 'mailto:lucas@lucasgaldino.com',
@@ -233,16 +264,39 @@ const metadata = {
   </Fragment>
 </Steps2>
 
-<!-- 🔹 Si luego decides usar WhatsApp Business, cambia el callToAction a esto:
-
+<!-- FAQs Widget ******************* -->
+<FAQs
+  title="Preguntas frecuentes"
+  items={[
     {
-      title: 'Sígueme',
-      description: '@tuusuario',
-      icon: 'tabler:brand-instagram',
+      title: '¿Realmente necesito redes sociales para mi clínica?',
+      description: 'Sí. El 70% de pacientes buscan información de salud en redes sociales antes de elegir un profesional. Una presencia activa te diferencia de la competencia.',
     },
-callToAction={{
-  text: 'Escríbeme por WhatsApp',
-  href: 'https://wa.me/34123456789',
-}
--->
+    {
+      title: '¿Qué pasa si no me gusta el diseño?',
+      description: 'Te muestro el diseño antes de finalizar. Hacemos todos los ajustes necesarios hasta que estés satisfecho. Solo pagas cuando apruebes el resultado final.',
+    },
+    {
+      title: '¿Puedo actualizar la web yo mismo?',
+      description: 'Sí, aunque el plan básico requiere contactarme para cambios. Puedo enseñarte a hacer actualizaciones simples o hacerlas yo por ti.',
+    },
+    {
+      title: '¿Cómo funciona el sistema de reservas?',
+      description: 'Integramos cal.com, una plataforma profesional donde pacientes eligen fecha y hora. Tú recibes notificaciones y gestionas tu agenda fácilmente.',
+    },
+    {
+      title: '¿Qué tipo de contenido publicas en redes sociales?',
+      description: 'Posts educativos sobre salud, consejos relacionados con tu especialidad, información sobre tus servicios. Todo con lenguaje cercano y profesional, supervisado por mí.',
+    },
+    {
+      title: '¿Cuánto tardas en tener mi web lista?',
+      description: 'Entre 1-2 semanas desde que apruebas el diseño inicial. Soy rápido porque es mi prioridad darte resultados.',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</FAQs>
+
 </Layout>
