@@ -209,6 +209,77 @@ const metadata = {
       ]}
 >
 </Pricing>
+<!-- OMC Prescription Tool Section -->
+<Features
+  id="recetas"
+  tagline="Nueva herramienta"
+  title="Rellena recetas OMC en segundos"
+  subtitle="Para médicos y especialistas en consulta privada. Sin instalar nada, desde el navegador."
+  columns={2}
+  items={[
+    {
+      title: 'Rellena el PDF oficial al instante',
+      description: 'Introduce los datos del paciente y el medicamento una sola vez. La herramienta rellena la receta OMC oficial con una interfaz limpia, sin editar el PDF a mano.',
+      icon: 'tabler:file-text',
+    },
+    {
+      title: 'Sin instalación ni configuración',
+      description: 'Acceso directo desde el navegador. Funciona desde el ordenador o la tablet de consulta. Nada que instalar, nada que configurar.',
+      icon: 'tabler:plug',
+    },
+    {
+      title: 'Ahorra tiempo cada día',
+      description: 'Si escribes 15-30 recetas diarias, recuperas decenas de minutos al día. Tiempo que vuelve a tus pacientes.',
+      icon: 'tabler:clock',
+    },
+    {
+      title: 'Diseñado para consulta privada',
+      description: 'Específicamente para recetas OMC — el formato estándar de prescripción en consulta privada fuera del sistema REMPe.',
+      icon: 'tabler:stethoscope',
+    },
+  ]}
+>
+</Features>
+
+<!-- OMC Pricing -->
+<Pricing
+  id="pricing-recetas"
+  title="Precio de la herramienta de recetas"
+  subtitle="Sin permanencia. 14 días de prueba gratuita."
+  prices={[
+    {
+      title: 'Médico individual',
+      subtitle: 'Para una sola consulta',
+      price: '29',
+      period: 'por mes · 14 días gratis',
+      items: [
+        { description: 'Acceso completo a la herramienta' },
+        { description: 'Recetas OMC ilimitadas' },
+        { description: 'Acceso desde cualquier dispositivo' },
+        { description: 'Sin instalación' },
+      ],
+      callToAction: { text: 'Empezar prueba gratuita', href: '#contact' },
+    },
+    {
+      title: 'Clínica con varios médicos',
+      subtitle: 'Hasta 4 prescriptores',
+      price: '49',
+      period: 'por mes · 14 días gratis',
+      hasRibbon: true,
+      ribbonTitle: 'Más valor',
+      items: [
+        { description: 'Todo lo incluido en médico individual' },
+        { description: 'Hasta 4 usuarios simultáneos' },
+        { description: 'Cuenta compartida para la clínica' },
+      ],
+      callToAction: { text: 'Empezar prueba gratuita', href: '#contact' },
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Pricing>
 <!-- Why Me Section -->
 <Content
   title="¿Por qué trabajo con profesionales de la salud?"
