@@ -3,22 +3,21 @@ site:
   site: 'https://lucasgaldino.com'
   base: '/'
   trailingSlash: false
-
   # googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:
   title:
-    default: Lucas Galdino
+    default: 'Diseño web para clínicas y profesionales de la salud en Alicante'
     template: '%s — Lucas Galdino'
-  description: "Lucas Galdino ofrece diseño web profesional, hosting y soporte en España. Páginas rápidas, modernas y seguras para negocios y proyectos personales."
+  description: 'Diseño web profesional, SEO local y gestión de redes sociales para clínicas, fisioterapeutas y psicólogos en Alicante. Más pacientes con presencia digital.'
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Lucas Galdino
     images:
-      - url: '~/assets/images/true.png'
+      - url: '~/assets/images/true.png' # ⚠️ replace with a real 1200×628px OG image
         width: 1200
         height: 628
     type: website
@@ -28,38 +27,33 @@ metadata:
   #   cardType: summary_large_image
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 apps:
   blog:
     isEnabled: true
     postsPerPage: 6
-
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/%slug%'
       robots:
         index: true
-
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog'
       robots:
         index: true
-
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'category'
       robots:
         index: true
-
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'tag'
       robots:
         index: false
-
     isRelatedPostsEnabled: true
     relatedPostsCount: 4
 
@@ -69,4 +63,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'system'
