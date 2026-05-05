@@ -54,341 +54,341 @@ const metadata = {
         </span>
       </Fragment>
     </Fragment>
-    <!-- Demos Widget *************** -->
-    <Features2
-      title="Ejemplos"
-      subtitle="Sitios web diseñados específicamente para profesionales de la salud"
-      items={[
-        {
-          title: 'Clínica Dr. Vanesa Pérez',
-          description: 'Clínica de transplantes y tratamientos capilar',
-          icon: 'tabler:vaccine',
-          href: 'https://instituto-capilar-alicante.netlify.app/',
-        },
-        {
-          title: 'Centro de Salud',
-          description: 'Web con reservas online y gestión de citas',
-          icon: 'tabler:heart-handshake',
-          href: 'https://garden.lucasgaldino.com/demo-1/?#equipo',
-        },
-      ]}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </Features2>
-    <!-- Features Widget *************** -->
-    <Features
-      id="features"
-      title="Servicios"
-      subtitle="Todo lo que tu clínica necesita para atraer y gestionar pacientes online."
-      columns={2}
-      items={[
-        {
-          title: 'Web profesional con reservas online',
-          description: 'Sitio web conectado a cal.com para que pacientes reserven citas 24/7. Fácil de gestionar.',
-          icon: 'tabler:calendar-check',
-        },
-        {
-          title: 'Gestión de redes sociales',
-          description:
-            'Instagram gestionado con inteligencia artificial. 8-12 publicaciones mensuales que educan y atraen pacientes.',
-          icon: 'tabler:brand-instagram',
-        },
-        {
-          title: 'Aparece en búsquedas locales',
-          description:
-            'Optimización para Google y Google Maps. Cuando busquen "fisioterapeuta Alicante", te encontrarán.',
-          icon: 'tabler:map-search',
-        },
-        {
-          title: 'Diseño adaptado a móviles',
-          description: 'Tus pacientes buscan desde el móvil. Tu web se ve perfecta en cualquier dispositivo.',
-          icon: 'tabler:device-mobile',
-        },
-        {
-          title: 'Contenido sanitario de calidad',
-          description:
-            'Conocimiento del sector sanitario aplicado a cada publicación y página. Contenido profesional y cercano que genera confianza.',
-          icon: 'tabler:stethoscope',
-        },
-        {
-          title: 'Actualización sencilla',
-          description: 'Cambia horarios, servicios o información sin complicaciones técnicas.',
-          icon: 'tabler:edit',
-        },
-      ]}
-    />
-    <!-- Steps Widget ****************** -->
-    <Steps
-      id="process"
-      tagline="Cómo funciona"
-      title="Un proceso simple para tener tu presencia digital lista en días."
-      isReversed={true}
-      items={[
-        {
-          title: 'Auditoría gratuita',
-          description: 'Analizo tu web y redes sociales actuales. Te muestro qué mejorar para conseguir más pacientes.',
-          icon: 'tabler:number-1',
-        },
-        {
-          title: 'Propuesta personalizada',
-          description: 'Te presento un plan específico para tu clínica con ejemplos visuales.',
-          icon: 'tabler:number-2',
-        },
-        {
-          title: 'Desarrollo rápido',
-          description: 'Creo tu web y configuro las redes sociales. Todo listo en 1-2 semanas.',
-          icon: 'tabler:number-3',
-        },
-        {
-          title: 'Gestión continua',
-          description: 'Mantengo tu web actualizada y publico contenido regularmente en redes sociales.',
-          icon: 'tabler:number-4',
-        },
-      ]}
-      image={{
-        src: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop',
-        alt: 'Profesional sanitario trabajando',
-      }}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </Steps>
-    <!-- Pricing Widget ******************* -->
-    <Pricing
-      id="pricing"
-      title="Planes y precios"
-      subtitle="Inversión clara para hacer crecer tu clínica — sin permanencia, sin sorpresas"
-      prices={[
-        {
-          title: 'Web Profesional',
-          subtitle: 'Desarrollo a medida + mantenimiento',
-          price: '119',
-          period: 'por mes · 900€ inicial',
-          items: [
-            { description: 'Desarrollo web completo' },
-            { description: 'Dominio' },
-            { description: 'Gestión SEO' },
-            { description: 'Sistema de reservas online (cal.com)' },
-            { description: 'Análisis semanal de tráfico y rendimiento' },
-            { description: 'Cambios pequeños en 48h, estructurales en 7 días' },
-          ],
-          callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
-        },
-        {
-          title: 'Pack Completo',
-          subtitle: 'Web profesional + gestión Instagram',
-          price: '389',
-          period: 'por mes · 900€ inicial · presupuesto publicitario no incluido',
-          hasRibbon: true,
-          ribbonTitle: 'Más popular',
-          items: [{ description: 'Todo lo incluido en Web Profesional, Redes Sociales, y Anuncios' }],
-          callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
-        },
-        {
-          title: 'Redes Sociales',
-          subtitle: 'Gestión Instagram para clínicas',
-          price: '149',
-          period: 'por mes · primer mes gratuito',
-          items: [
-            { description: '2-3 publicaciones semanales en Instagram' },
-            { description: 'Estrategia de contenido sanitario personalizada' },
-            { description: 'Hashtags y textos optimizados para clínicas' },
-            { description: 'Informe mensual de resultados' },
-          ],
-          callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
-        },
-        {
-          title: 'Anuncios',
-          subtitle: 'Campañas en Google y Meta',
-          price: '199',
-          period: 'por mes · primer mes gratuito · presupuesto publicitario no incluido',
-          items: [
-            { description: 'Campañas Google personalizadas' },
-            { description: 'Campañas Meta personalizadas' },
-            { description: 'Analisis semanal de tráfico y leads' },
-          ],
-          callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
-        },
-      ]}
-    />
-    <!-- OMC Prescription Tool Section -->
-    <Features
-      id="recetas"
-      tagline="Nueva herramienta"
-      title="Rellena recetas OMC en segundos"
-      subtitle="Para médicos y especialistas en consulta privada. Sin instalar nada, desde el navegador."
-      columns={2}
-      items={[
-        {
-          title: 'Rellena el PDF oficial al instante',
-          description:
-            'Introduce los datos del paciente y el medicamento una sola vez. La herramienta rellena la receta OMC oficial con una interfaz limpia, sin editar el PDF a mano.',
-          icon: 'tabler:file-text',
-        },
-        {
-          title: 'Sin instalación ni configuración',
-          description:
-            'Acceso directo desde el navegador. Funciona desde el ordenador o la tablet de consulta. Nada que instalar, nada que configurar.',
-          icon: 'tabler:plug',
-        },
-        {
-          title: 'Ahorra tiempo cada día',
-          description:
-            'Si escribes 15-30 recetas diarias, recuperas decenas de minutos al día. Tiempo que vuelve a tus pacientes.',
-          icon: 'tabler:clock',
-        },
-        {
-          title: 'Diseñado para consulta privada',
-          description:
-            'Específicamente para recetas OMC — el formato estándar de prescripción en consulta privada fuera del sistema REMPe.',
-          icon: 'tabler:stethoscope',
-        },
-      ]}
-    />
-
-    <!-- OMC Pricing -->
-    <Pricing
-      id="pricing-recetas"
-      title="Precio de la herramienta de recetas"
-      subtitle="Sin permanencia. 14 días de prueba gratuita."
-      prices={[
-        {
-          title: 'Médico individual',
-          subtitle: 'Para una sola consulta',
-          price: '29',
-          period: 'por mes · 14 días gratis',
-          items: [
-            { description: 'Acceso completo a la herramienta' },
-            { description: 'Recetas OMC ilimitadas' },
-            { description: 'Acceso desde cualquier dispositivo' },
-            { description: 'Sin instalación' },
-          ],
-          callToAction: { text: 'Empezar prueba gratuita', href: '#contact' },
-        },
-        {
-          title: 'Clínica con varios médicos',
-          subtitle: 'Hasta 4 prescriptores',
-          price: '49',
-          period: 'por mes · 14 días gratis',
-          hasRibbon: true,
-          ribbonTitle: 'Más valor',
-          items: [
-            { description: 'Todo lo incluido en médico individual' },
-            { description: 'Hasta 4 usuarios simultáneos' },
-            { description: 'Cuenta compartida para la clínica' },
-          ],
-          callToAction: { text: 'Empezar prueba gratuita', href: '#contact' },
-        },
-      ]}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </Pricing>
-    <!-- Why Me Section -->
-    <Content
-      title="¿Por qué trabajo con profesionales de la salud?"
-      subtitle="La combinación perfecta: desarrollo web + conocimiento sanitario"
-      items={[
-        {
-          title: 'Entiendo tu sector',
-          description:
-            'Formación sanitaria aplicada al marketing digital. Conozco el lenguaje médico, la importancia de la confidencialidad y cómo comunicar con pacientes de forma profesional.',
-          icon: 'tabler:school',
-        },
-        {
-          title: 'Desarrollo rápido y profesional',
-          description:
-            'Webs sin WordPress, código limpio y rendimiento >90 en Core Web Vitals. Tu web estará lista en días, no meses.',
-          icon: 'tabler:code',
-        },
-        {
-          title: 'Local en Alicante',
-          description: 'Puedo visitarte en persona, entender tu clínica y hacer ajustes rápidos cuando lo necesites.',
-          icon: 'tabler:map-pin',
-        },
-      ]}
-      image={{
-        src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop',
-        alt: 'Profesional trabajando',
-      }}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </Content>
-    <!-- Steps2 Widget ****************** -->
-    <Steps2
-      id="contact"
-      title="Solicita tu auditoría gratuita"
-      subtitle="Te muestro exactamente cómo mejorar tu presencia digital para conseguir más pacientes."
-      callToAction={{
-        text: 'Envíame un correo',
-        href: 'mailto:lucas@lucasgaldino.com',
-      }}
-      items={[
-        {
-          title: 'Email',
-          description: 'lucas@lucasgaldino.com',
-          icon: 'tabler:mail',
-        },
-        {
-          title: 'WhatsApp',
-          description: '<a href="https://wa.me/34658482871" target="blank">658 48 28 71</a>',
-          icon: 'tabler:brand-whatsapp',
-        },
-      ]}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </Steps2>
-    <!-- FAQs Widget ******************* -->
-    <FAQs
-      title="Preguntas frecuentes"
-      items={[
-        {
-          title: '¿Realmente necesito redes sociales para mi clínica?',
-          description:
-            'Sí. El 70% de pacientes buscan información de salud en redes sociales antes de elegir un profesional. Una presencia activa te diferencia de la competencia.',
-        },
-        {
-          title: '¿Qué pasa si no me gusta el diseño?',
-          description:
-            'Te muestro el diseño antes de finalizar. Hacemos todos los ajustes necesarios hasta que estés satisfecho. Solo pagas el setup cuando apruebes el resultado final.',
-        },
-        {
-          title: '¿Puedo actualizar la web yo mismo?',
-          description:
-            'Sí, aunque el plan básico requiere contactarme para cambios. Puedo enseñarte a hacer actualizaciones simples o hacerlas yo por ti incluidas en la mensualidad.',
-        },
-        {
-          title: '¿Cómo funciona el sistema de reservas?',
-          description:
-            'Integramos cal.com, una plataforma profesional donde pacientes eligen fecha y hora. Tú recibes notificaciones y gestionas tu agenda fácilmente.',
-        },
-        {
-          title: '¿Qué tipo de contenido publicas en redes sociales?',
-          description:
-            'Posts educativos sobre salud, consejos relacionados con tu especialidad, información sobre tus servicios. Todo con lenguaje cercano y profesional, adaptado a tu clínica.',
-        },
-        {
-          title: '¿Cuánto tardas en tener mi web lista?',
-          description: 'Entre 1-2 semanas desde que apruebas el diseño inicial.',
-        },
-        {
-          title: '¿Qué incluye el pago inicial?',
-          description:
-            'El pago inicial cubre todo el desarrollo: diseño, programación, configuración del SEO, integración de reservas y puesta en marcha. La mensualidad cubre el mantenimiento, hosting, dominio y gestión continua.',
-        },
-      ]}
-    >
-      <Fragment slot="bg">
-        <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-      </Fragment>
-    </FAQs>
   </Hero2>
+  <!-- Demos Widget *************** -->
+  <Features2
+    title="Ejemplos"
+    subtitle="Sitios web diseñados específicamente para profesionales de la salud"
+    items={[
+      {
+        title: 'Clínica Dr. Vanesa Pérez',
+        description: 'Clínica de transplantes y tratamientos capilar',
+        icon: 'tabler:vaccine',
+        href: 'https://instituto-capilar-alicante.netlify.app/',
+      },
+      {
+        title: 'Centro de Salud',
+        description: 'Web con reservas online y gestión de citas',
+        icon: 'tabler:heart-handshake',
+        href: 'https://garden.lucasgaldino.com/demo-1/?#equipo',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+  <!-- Features Widget *************** -->
+  <Features
+    id="features"
+    title="Servicios"
+    subtitle="Todo lo que tu clínica necesita para atraer y gestionar pacientes online."
+    columns={2}
+    items={[
+      {
+        title: 'Web profesional con reservas online',
+        description: 'Sitio web conectado a cal.com para que pacientes reserven citas 24/7. Fácil de gestionar.',
+        icon: 'tabler:calendar-check',
+      },
+      {
+        title: 'Gestión de redes sociales',
+        description:
+          'Instagram gestionado con inteligencia artificial. 8-12 publicaciones mensuales que educan y atraen pacientes.',
+        icon: 'tabler:brand-instagram',
+      },
+      {
+        title: 'Aparece en búsquedas locales',
+        description:
+          'Optimización para Google y Google Maps. Cuando busquen "fisioterapeuta Alicante", te encontrarán.',
+        icon: 'tabler:map-search',
+      },
+      {
+        title: 'Diseño adaptado a móviles',
+        description: 'Tus pacientes buscan desde el móvil. Tu web se ve perfecta en cualquier dispositivo.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Contenido sanitario de calidad',
+        description:
+          'Conocimiento del sector sanitario aplicado a cada publicación y página. Contenido profesional y cercano que genera confianza.',
+        icon: 'tabler:stethoscope',
+      },
+      {
+        title: 'Actualización sencilla',
+        description: 'Cambia horarios, servicios o información sin complicaciones técnicas.',
+        icon: 'tabler:edit',
+      },
+    ]}
+  />
+  <!-- Steps Widget ****************** -->
+  <Steps
+    id="process"
+    tagline="Cómo funciona"
+    title="Un proceso simple para tener tu presencia digital lista en días."
+    isReversed={true}
+    items={[
+      {
+        title: 'Auditoría gratuita',
+        description: 'Analizo tu web y redes sociales actuales. Te muestro qué mejorar para conseguir más pacientes.',
+        icon: 'tabler:number-1',
+      },
+      {
+        title: 'Propuesta personalizada',
+        description: 'Te presento un plan específico para tu clínica con ejemplos visuales.',
+        icon: 'tabler:number-2',
+      },
+      {
+        title: 'Desarrollo rápido',
+        description: 'Creo tu web y configuro las redes sociales. Todo listo en 1-2 semanas.',
+        icon: 'tabler:number-3',
+      },
+      {
+        title: 'Gestión continua',
+        description: 'Mantengo tu web actualizada y publico contenido regularmente en redes sociales.',
+        icon: 'tabler:number-4',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop',
+      alt: 'Profesional sanitario trabajando',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Steps>
+  <!-- Pricing Widget ******************* -->
+  <Pricing
+    id="pricing"
+    title="Planes y precios"
+    subtitle="Inversión clara para hacer crecer tu clínica — sin permanencia, sin sorpresas"
+    prices={[
+      {
+        title: 'Web Profesional',
+        subtitle: 'Desarrollo a medida + mantenimiento',
+        price: '119',
+        period: 'por mes · 900€ inicial',
+        items: [
+          { description: 'Desarrollo web completo' },
+          { description: 'Dominio' },
+          { description: 'Gestión SEO' },
+          { description: 'Sistema de reservas online (cal.com)' },
+          { description: 'Análisis semanal de tráfico y rendimiento' },
+          { description: 'Cambios pequeños en 48h, estructurales en 7 días' },
+        ],
+        callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
+      },
+      {
+        title: 'Pack Completo',
+        subtitle: 'Web profesional + gestión Instagram',
+        price: '389',
+        period: 'por mes · 900€ inicial · presupuesto publicitario no incluido',
+        hasRibbon: true,
+        ribbonTitle: 'Más popular',
+        items: [{ description: 'Todo lo incluido en Web Profesional, Redes Sociales, y Anuncios' }],
+        callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
+      },
+      {
+        title: 'Redes Sociales',
+        subtitle: 'Gestión Instagram para clínicas',
+        price: '149',
+        period: 'por mes · primer mes gratuito',
+        items: [
+          { description: '2-3 publicaciones semanales en Instagram' },
+          { description: 'Estrategia de contenido sanitario personalizada' },
+          { description: 'Hashtags y textos optimizados para clínicas' },
+          { description: 'Informe mensual de resultados' },
+        ],
+        callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
+      },
+      {
+        title: 'Anuncios',
+        subtitle: 'Campañas en Google y Meta',
+        price: '199',
+        period: 'por mes · primer mes gratuito · presupuesto publicitario no incluido',
+        items: [
+          { description: 'Campañas Google personalizadas' },
+          { description: 'Campañas Meta personalizadas' },
+          { description: 'Analisis semanal de tráfico y leads' },
+        ],
+        callToAction: { text: 'Solicitar auditoría gratuita', href: '#contact' },
+      },
+    ]}
+  />
+  <!-- OMC Prescription Tool Section -->
+  <Features
+    id="recetas"
+    tagline="Nueva herramienta"
+    title="Rellena recetas OMC en segundos"
+    subtitle="Para médicos y especialistas en consulta privada. Sin instalar nada, desde el navegador."
+    columns={2}
+    items={[
+      {
+        title: 'Rellena el PDF oficial al instante',
+        description:
+          'Introduce los datos del paciente y el medicamento una sola vez. La herramienta rellena la receta OMC oficial con una interfaz limpia, sin editar el PDF a mano.',
+        icon: 'tabler:file-text',
+      },
+      {
+        title: 'Sin instalación ni configuración',
+        description:
+          'Acceso directo desde el navegador. Funciona desde el ordenador o la tablet de consulta. Nada que instalar, nada que configurar.',
+        icon: 'tabler:plug',
+      },
+      {
+        title: 'Ahorra tiempo cada día',
+        description:
+          'Si escribes 15-30 recetas diarias, recuperas decenas de minutos al día. Tiempo que vuelve a tus pacientes.',
+        icon: 'tabler:clock',
+      },
+      {
+        title: 'Diseñado para consulta privada',
+        description:
+          'Específicamente para recetas OMC — el formato estándar de prescripción en consulta privada fuera del sistema REMPe.',
+        icon: 'tabler:stethoscope',
+      },
+    ]}
+  />
+
+  <!-- OMC Pricing -->
+  <Pricing
+    id="pricing-recetas"
+    title="Precio de la herramienta de recetas"
+    subtitle="Sin permanencia. 14 días de prueba gratuita."
+    prices={[
+      {
+        title: 'Médico individual',
+        subtitle: 'Para una sola consulta',
+        price: '29',
+        period: 'por mes · 14 días gratis',
+        items: [
+          { description: 'Acceso completo a la herramienta' },
+          { description: 'Recetas OMC ilimitadas' },
+          { description: 'Acceso desde cualquier dispositivo' },
+          { description: 'Sin instalación' },
+        ],
+        callToAction: { text: 'Empezar prueba gratuita', href: '#contact' },
+      },
+      {
+        title: 'Clínica con varios médicos',
+        subtitle: 'Hasta 4 prescriptores',
+        price: '49',
+        period: 'por mes · 14 días gratis',
+        hasRibbon: true,
+        ribbonTitle: 'Más valor',
+        items: [
+          { description: 'Todo lo incluido en médico individual' },
+          { description: 'Hasta 4 usuarios simultáneos' },
+          { description: 'Cuenta compartida para la clínica' },
+        ],
+        callToAction: { text: 'Empezar prueba gratuita', href: '#contact' },
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Pricing>
+  <!-- Why Me Section -->
+  <Content
+    title="¿Por qué trabajo con profesionales de la salud?"
+    subtitle="La combinación perfecta: desarrollo web + conocimiento sanitario"
+    items={[
+      {
+        title: 'Entiendo tu sector',
+        description:
+          'Formación sanitaria aplicada al marketing digital. Conozco el lenguaje médico, la importancia de la confidencialidad y cómo comunicar con pacientes de forma profesional.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Desarrollo rápido y profesional',
+        description:
+          'Webs sin WordPress, código limpio y rendimiento >90 en Core Web Vitals. Tu web estará lista en días, no meses.',
+        icon: 'tabler:code',
+      },
+      {
+        title: 'Local en Alicante',
+        description: 'Puedo visitarte en persona, entender tu clínica y hacer ajustes rápidos cuando lo necesites.',
+        icon: 'tabler:map-pin',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=869&auto=format&fit=crop',
+      alt: 'Profesional trabajando',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+  <!-- Steps2 Widget ****************** -->
+  <Steps2
+    id="contact"
+    title="Solicita tu auditoría gratuita"
+    subtitle="Te muestro exactamente cómo mejorar tu presencia digital para conseguir más pacientes."
+    callToAction={{
+      text: 'Envíame un correo',
+      href: 'mailto:lucas@lucasgaldino.com',
+    }}
+    items={[
+      {
+        title: 'Email',
+        description: 'lucas@lucasgaldino.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'WhatsApp',
+        description: '<a href="https://wa.me/34658482871" target="blank">658 48 28 71</a>',
+        icon: 'tabler:brand-whatsapp',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Steps2>
+  <!-- FAQs Widget ******************* -->
+  <FAQs
+    title="Preguntas frecuentes"
+    items={[
+      {
+        title: '¿Realmente necesito redes sociales para mi clínica?',
+        description:
+          'Sí. El 70% de pacientes buscan información de salud en redes sociales antes de elegir un profesional. Una presencia activa te diferencia de la competencia.',
+      },
+      {
+        title: '¿Qué pasa si no me gusta el diseño?',
+        description:
+          'Te muestro el diseño antes de finalizar. Hacemos todos los ajustes necesarios hasta que estés satisfecho. Solo pagas el setup cuando apruebes el resultado final.',
+      },
+      {
+        title: '¿Puedo actualizar la web yo mismo?',
+        description:
+          'Sí, aunque el plan básico requiere contactarme para cambios. Puedo enseñarte a hacer actualizaciones simples o hacerlas yo por ti incluidas en la mensualidad.',
+      },
+      {
+        title: '¿Cómo funciona el sistema de reservas?',
+        description:
+          'Integramos cal.com, una plataforma profesional donde pacientes eligen fecha y hora. Tú recibes notificaciones y gestionas tu agenda fácilmente.',
+      },
+      {
+        title: '¿Qué tipo de contenido publicas en redes sociales?',
+        description:
+          'Posts educativos sobre salud, consejos relacionados con tu especialidad, información sobre tus servicios. Todo con lenguaje cercano y profesional, adaptado a tu clínica.',
+      },
+      {
+        title: '¿Cuánto tardas en tener mi web lista?',
+        description: 'Entre 1-2 semanas desde que apruebas el diseño inicial.',
+      },
+      {
+        title: '¿Qué incluye el pago inicial?',
+        description:
+          'El pago inicial cubre todo el desarrollo: diseño, programación, configuración del SEO, integración de reservas y puesta en marcha. La mensualidad cubre el mantenimiento, hosting, dominio y gestión continua.',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs>
 </Layout>
